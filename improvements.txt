@@ -1,0 +1,5 @@
+1. path gets very close to obstacles and might hit. for this, we can dilate the obstacles when processing it and adding a buffer zone. i implemented it in the last moment.
+2. the edges of the shortest path are sharp. for this, have to do some interpolations or some non uniform sampling of the trajectory i order to increase
+points around the edges for a smoother bend.
+3. computational complexity: RRT* is actually less computational power, but when the obstacles increase we have to increase the number of nodes to get 
+an accurate result. this is complex. for this i am still doing further research.
